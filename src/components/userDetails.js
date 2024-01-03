@@ -16,7 +16,6 @@ const UserDetails = () => {
       .then((res) => {
         return res.json()
       }).then((resp) => {
-        console.log(resp)
         let data= resp.find((item)=>item.userId==userId?.userId)
         setUserDetails(data)
       }).catch((err) => {
