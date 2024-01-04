@@ -82,7 +82,7 @@ const LoginPage = () => {
     }
 
     return (
-        <div className='container'>
+        <div className='main-card mx-auto'>
             <h2>Signin to your PopX account</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <div>

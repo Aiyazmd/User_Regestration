@@ -6,7 +6,7 @@ import UserDetails from "./components/userDetails";
 import CreateUser from "./components/createUser";
 function App() {
   return (
-    <div className="App">
+    <div className="App px-sm-2">
       <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home/>} />

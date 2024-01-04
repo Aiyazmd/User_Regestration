@@ -12,19 +12,19 @@ const Main = () => {
     }
   return (
     <>
-    <div className="container">
-    <div >
-      <div className='display-content'>
+   
+    <div className='main-card mx-auto d-flex align-items-end '>
+      <div >
         <h2>Welcome to PopX</h2>
         <p style={{width:"200px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
         <div>
-        <Button className="fill-btn m-0 ms-6 submit-spinner" style={{marginBottom:"10px"}} onClick={handleCreateAccount}> Create Account</Button>
+        <Button className="fill-btn "  onClick={handleCreateAccount}> Create Account</Button>
         
-        <Button className="fill-btn m-0 ms-6 submit-spinner"  onClick={handleLogin}> Already Registered? Login</Button>
+        <Button className="fill-btn "  onClick={handleLogin}> Already Registered? Login</Button>
         </div>
         </div>
     </div>
-    </div>
+    
     </>
   )
 }

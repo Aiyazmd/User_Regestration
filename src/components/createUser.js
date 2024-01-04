@@ -96,9 +96,13 @@ const CreateUser = () => {
         
     }
     return (
-        <div className='container'>
-            <h2>Create your PopX account</h2>
+        <div className='main-card mx-auto'>
+            <h2>Create your</h2>
+            <h2 className='mb-4'>PopX account</h2>
             <Form noValidate validated={validated} >
+
+           
+
                 <FloatingLabel  controlId="floatingInput" label="Full Name*" className="input-style">
                     <Form.Control
                         type="text"
@@ -166,33 +170,25 @@ const CreateUser = () => {
                     <Form.Control.Feedback type="invalid" style={{color:"red"}}>{errors.companyName}</Form.Control.Feedback>
                 </FloatingLabel>
                 <div>
-                    <p>Are you an Agency?*</p>
+                    <h6>Are you an Agency?*</h6>
                     <div className='flux'>
-                        <FloatingLabel controlId="floatingInput" label="Yes" >
-                            <Form.Control
-                                type="radio"
-                                name="agency"
-                                value={"Yes"}
-                                onChange={(e) => { setField('agencyYes', e.currentTarget.value) }}
-                                required
-                                placeholder="Company name"
-                                maxLength={50}
-                            />
-                        </FloatingLabel>
-                        <FloatingLabel controlId="floatingInput" label="No" >
-                            <Form.Control
-                                type="radio"
-                                name="agency"
-                                value={"No"}
-                                onChange={(e) => { setField('agencyNo', e.currentTarget.value) }}
-                                required
-                                placeholder="Company name"
-                                maxLength={50}
-                            />
-                        </FloatingLabel>
+                    <div class="form-check ">
+  <input class="form-check-input" onChange={(e) => { setField('agencyYes', e.currentTarget.value) }} type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+  <label class="form-check-label" for="flexRadioDefault1">
+    Yes
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" onChange={(e) => { setField('agencyNo', e.currentTarget.value) }} type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+  <label class="form-check-label" for="flexRadioDefault2">
+    No
+  </label>
+</div>
+                          
+                       
                     </div>
                 </div>
-                <div className='btn-bottom'>
+                <div className='btn-bottom mt-5'>
                 <Button className="fill-btn m-0 ms-6 submit-spinner" type="button" onClick={() => handleSubmit()} >
                     Create Account
                 </Button>

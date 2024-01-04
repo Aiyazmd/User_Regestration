@@ -39,12 +39,13 @@ const UserDetails = () => {
   };
 
   return (<>
-
-    <div className='container'>
-      <div className='accountHeader'>Account Settings</div>
-      <div style={{ padding: "20px" }}>
+    <div className='main-card mx-auto p-0'>
+    <div  className='bg-white px-4 py-3' >Account Settings</div>
+    <div className='px-4 mt-4' >
+      
+      <div >
         <Form>
-          <div style={{ display: "flex" }}>
+          <div className='d-flex'>
             <div className="profile-size c-pointer upload-profile-mobile">
               <Form.Group>
                 <span className="image-box">
@@ -68,12 +69,16 @@ const UserDetails = () => {
               <p>{userDetails?.email}</p>
             </div>
           </div>
-          <p className="profile-value">{"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"}</p>
-          <Button className="fill-btn" onClick={() => handleBack()}>
+          <p className="profile-value mt-4 ">{"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"}</p>
+          {/* <Button className="fill-btn" onClick={() => handleBack()}>
             Back
-          </Button>
+          </Button> */}
         </Form>
       </div>
+    </div>
+
+<div className='dashed-box'></div>
+
     </div>
   </>
   )
